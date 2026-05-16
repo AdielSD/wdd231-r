@@ -1,0 +1,37 @@
+@media only screen and (min-width: 38rem) {
+
+    header {
+        grid-template-columns: 24px auto;
+
+    }
+
+    .hamburguer {
+        display: none;
+    }
+
+    .navigation {
+    display: block;
+}
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul{
+        display: flex;
+        justify-content:flex-start;
+        gap: 1rem; /* controls space between links */
+    }
+
+    .navigation li{
+        width: auto;
+        padding: .5rem 1rem;
+    }
+
+    .cards {
+        display:grid;
+        justify-content:center ;
+        grid-template-columns: 60% 35%;
+    }
+
+}
