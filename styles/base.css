@@ -18,6 +18,15 @@
     background-color: var(--background);
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
 /*---------------------HEADER--------------------*/
 
 header{
