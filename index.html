@@ -3,122 +3,136 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= y, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Limatambo Central Business Hub</title>
     <meta name="author" content="Sephora Diaz">
-    <meta name="description" content="This is the index website of the course">
+    <meta name="description" content="This is the directory site of the Lima Central Business Hub">
 
-    <link rel="icon" href="images/house.svg">
+    <meta property="og:title" content="Directory - Limatambo Central Business Hub">
+    <meta property="og:description"
+        content="Supporting local businesses in Limatambo by providing resources, networking opportunities, and community events to help growth and success.">
+    <meta property="og:image" content="https://adielsd.github.io/wdd231/images/limatambo-logo.png">
+    <meta property="og:url" content="https://adielsd.github.io/wdd231/">
+    <meta property="og:type" content="website">
 
+    <!--STYLESHEETS-->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/b-large.css">
+    <link rel="stylesheet" href="styles/directory.css">
+
+    <link rel="preload" href="styles/directory-large.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles/directory-large.css">
+    </noscript>
 
 
+    <!--ICON-->
+
+    <link rel="icon" href="images/transparent-icon.ico" width="60" height="60" alt="site_logo">
 
 
-    <script src="scripts/index.js" defer></script>
-    <script src="scripts/courses.js" defer></script>
+    <!--FAMILY FONTS-->
+    
+    <!-- PRECONNECT -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     
+     <!-- PRELOAD FONTS -->
+      <link 
+      rel="preload" 
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Sora:wght@600;700&display=swap" 
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+      
+      <noscript>
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Sora:wght@600;700&display=swap" 
+        rel="stylesheet">
+    </noscript>
 
+
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/date.js" defer></script>   
+    <script src="data/members.json" defer></script>
 
 </head>
 
-
-
 <body>
-    <div class="menu">
+    <section class="navigator">
+    <header>
+        <img src="images/transparent-icon.svg" alt="site_logo" width="60" height="60">
 
-        <header>
-            <img src="images/house.svg" alt="site logo" width="512" height="512">
-            <span>Sephora's site</span>
-            <button id="ham-btn" class="hamburguer" aria-label="Open navigation menu"></button>
+        <span> Limatambo Central Business Hub </span>
 
-        </header>
+        <button id="ham-btn" class="hamburguer" aria-label="Open navigation menu"></button>
 
-        <nav id="nav-bar" class="navigation">
-            <ul>
-                <li class="current"><a href="#">Home</a></li>
-                <li><a href="#">Chamber Project</a></li>
-                <li><a href="#">Final Project</a></li>
-            </ul>
-        </nav>
+    </header>
 
-    </div>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+
+            <li><a href="">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="">Join</a></li>
+            <li><a href="">Discover</a></li>
+
+        </ul>
+    </nav>
+    </section>
 
 
     <main>
-        <h1>Home</h1>
-        <div class="cards">
 
-            <div class="aboutme">
-                <h2>About me</h2>
+        <h1>Business Directory</h1>
 
-                <p>
-                    My name is Sephora, and I’m from Peru. I’m someone who enjoys learning new things and trying
-                    different experiences that help me grow as a person.
-                    Right now I’m interested in software development, languages, and web design,
-                    and I like finding creative ways to improve my skills little by little. I also teach English,
-                    which has helped me become more patient and communicative. In my free time, I enjoy dancing, going
-                    to the gym, listening to music,
-                    and spending time with friends. I’ve also become interested in activities like surfing and
-                    motorcycles because I like trying things that feel
-                    exciting and different.
-
-                    I would describe myself as curious, friendly, and open minded. I enjoy meaningful conversations,
-                    meeting people from different backgrounds,
-                    and learning about new cultures and ideas. Even though I like having goals and thinking about my
-                    future,
-                    I also try to enjoy simple things and keep a balanced life. I’m currently focused on growing both
-                    personally and professionally
-                    while continuing to explore new hobbies and opportunities that interest me.
-                </p>
-            </div>
+        <section id="members">
+        </section>
 
 
 
-            <div id="photo" class="photo">
-
-                <h2 class="text">My photo</h2>
 
 
-                <img src="images/mee.webp" alt="mugshot" width="250px" height="420">
 
-            </div>
 
-        </div>
+        <!-- <h3>Find Us</h3>
+        <iframe 
+            src="https://www.google.com/maps?q=Surquillo+Lima+Peru&output=embed" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
 
-        <div class="certificate">
+        -->
 
-            <h2>Web computer programming certificate</h2>
-
-            <div class="filters">
-
-                <button id="all">All Courses</button>
-                <button id="wdd">WDD Courses</button>
-                <button id="cse">CSE Courses</button>
-            </div>
-
-            <div id="courses"></div>
-
-            <div class="credits">
-                <p>Total Credits: <span id="credits"></span></p>
-            </div>
-
-            
-
-        </div>
 
     </main>
 
     <footer>
-        <p></p>
+
+        <div class="Contact">
+            <h4>Contact Us</h4>
+            <p><strong>Phone:</strong> +51 987 654 321</p>
+            <p><strong>Email:</strong> info@limatambochamber.pe</p>
+
+            <address>
+                Limatambo Chamber of Commerce<br>
+                Av. República de Panamá 4567<br>
+                Surquillo, Lima 15047<br>
+                Peru
+            </address>
+        </div>
+
+
+
+
+
         <div class="social">
-            <a href="https://www.linkedin.com/in/sephora-diaz-altamirano-68b409262/" target="_blank"><img
-                    src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
-            <a href="https://github.com/AdielSD" target="_blank"><img src="images/github.svg" alt="github" width="16"
+            <a href="" target="_blank"><img src="images/instagram.svg" alt="instagram" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/microsoft-teams.svg" alt="microsoft-teams" width="16"
                     height="16"></a>
-            <a href="https://x.com/?lang=en" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x" width="16"
-                    height="16"></a>
+            <a href="" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x" width="16" height="16"></a>
         </div>
 
         <div class="date">
@@ -128,11 +142,11 @@
             <p id="lastModified"></p>
 
         </div>
+
+
+
     </footer>
 
-
 </body>
-
-
 
 </html>

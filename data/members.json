@@ -1,0 +1,58 @@
+[
+  {
+    "name": "InnovaTech Solutions",
+    "address": "Av. Javier Prado 1234, Lima",
+    "phone": "+51 912 345 678",
+    "website": "https://innovatech.pe",
+    "image": "innovatech.webp",
+    "membership": 3
+  },
+  {
+    "name": "Green Market Peru",
+    "address": "Calle Los Olivos 456, Lima",
+    "phone": "+51 987 111 222",
+    "website": "https://greenmarket.pe",
+    "image": "greenmarket.webp",
+    "membership": 2
+  },
+  {
+    "name": "Andes Logistics",
+    "address": "Av. Industrial 789, Lima",
+    "phone": "+51 955 333 444",
+    "website": "https://andeslogistics.pe",
+    "image": "andes.webp",
+    "membership": 1
+  },
+  {
+    "name": "Café Lima",
+    "address": "Av. Larco 222, Miraflores",
+    "phone": "+51 944 555 666",
+    "website": "https://cafelima.pe",
+    "image": "cafe.webp",
+    "membership": 2
+  },
+  {
+    "name": "Constructora Nova",
+    "address": "Av. Arequipa 321, Lima",
+    "phone": "+51 933 777 888",
+    "website": "https://nova.pe",
+    "image": "nova.webp",
+    "membership": 3
+  },
+  {
+    "name": "Fitness Pro Gym",
+    "address": "Av. Angamos 654, Surquillo",
+    "phone": "+51 922 888 999",
+    "website": "https://fitnesspro.pe",
+    "image": "gym.webp",
+    "membership": 1
+  },
+  {
+    "name": "Digital Marketing Hub",
+    "address": "San Isidro, Lima",
+    "phone": "+51 911 000 111",
+    "website": "https://dmhub.pe",
+    "image": "marketing.webp",
+    "membership": 3
+  }
+]

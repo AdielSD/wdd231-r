@@ -1,0 +1,193 @@
+@media (min-width: 768px) {
+
+    :root {
+        /* =================================
+     PRIMARY BRAND COLORS
+  ================================= */
+
+        --primary: #09093F;
+        /* Deep Midnight Navy */
+        --secondary: #00C6D7;
+        /* Electric Teal */
+        --accent: #FF9E1B;
+        /* Vibrant Orange */
+        --highlight: #E9338A;
+        /* Magenta Fusion */
+        --tertiary: #6D1BB5;
+        /* Royal Purple */
+
+        /* =================================
+     OPTIONAL STATE VARIATIONS
+  ================================= */
+
+        --primary-hover: #1A1A5C;
+        --secondary-hover: #00A8B8;
+        --accent-hover: #E68900;
+        --highlight-hover: #C81F72;
+        --tertiary-hover: #57138F;
+
+        /* =================================
+     BACKGROUNDS & TEXT
+  ================================= */
+
+        --background-dark: #040420;
+        --background-light: #F5F7FA;
+
+        --text-primary: #FFFFFF;
+        --text-secondary: #C8D0DA;
+        --text-dark: #1D2230;
+
+        /* =================================
+     GRADIENTS
+  ================================= */
+
+        --gradient-primary: linear-gradient(135deg,
+                #00C6D7 0%,
+                #6D1BB5 50%,
+                #E9338A 100%);
+
+        --gradient-accent: linear-gradient(135deg,
+                #FF9E1B 0%,
+                #E9338A 100%);
+
+        --gradient-dark: linear-gradient(135deg,
+                #040420 0%,
+                #09093F 100%);
+    }
+
+
+    .hamburguer {
+        display: none;
+    }
+
+    /* NAVIGATION */
+
+    .navigator {
+        display: flex;
+        background: var(--primary);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation {
+        display: block;
+        padding: 0.5rem;
+        background: var(--primary);
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #nav-bar {
+        width: auto;
+        justify-self: right;
+    }
+
+    .navigation a {
+        border: none;
+        transition: background-color 0.3s ease;
+        align-items: center;
+        padding-top: 1rem;
+        gap: 0;
+        width: 150px;
+    }
+
+    /* MEMBERS GRID */
+
+    #members {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+
+        min-height: auto;
+    }
+
+    /* MEMBER CARDS */
+
+    #members section {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+
+        align-items: center;
+
+        padding: 1.5rem;
+
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+
+    #members section:hover {
+        transform: translateY(-5px);
+
+        box-shadow:
+            0 10px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    /* IMAGES */
+
+    #members img {
+        width: 90px;
+        height: 90px;
+
+        aspect-ratio: 1 / 1;
+
+        object-fit: contain;
+    }
+
+    /* TEXT CONTENT */
+
+    #members section>div {
+        display: flex;
+        flex-direction: column;
+
+        gap: 0.5rem;
+    }
+
+    #members h3 {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    #members p {
+        text-align: left;
+    }
+
+    #members a {
+        align-self: start;
+    }
+
+    /* FOOTER */
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        padding: 2rem;
+    }
+
+    footer>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact {
+        text-align: left;
+    }
+
+    .social {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+
+    }
+
+    .date {
+        text-align: right;
+    }
+}
