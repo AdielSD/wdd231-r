@@ -181,9 +181,13 @@ h1::after {
   );
 }
 
+span {
+  display: block;
+}
+
 .navigation {
   display: none;
-  background-color: #1F3A5F;
+  background-color: var(--primary);
   flex-direction: column;
   width: 100%;
 

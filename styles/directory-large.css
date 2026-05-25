@@ -168,12 +168,14 @@
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
         padding: 2rem;
+        min-height: 250px;
     }
 
     footer>div {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    
     }
 
     .contact {
@@ -188,6 +190,6 @@
     }
 
     .date {
-        text-align: right;
+        text-align: center;
     }
 }
