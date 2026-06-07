@@ -14,12 +14,43 @@
     <meta property="og:url" content="https://adielsd.github.io/wdd231/">
     <meta property="og:type" content="website">
 
+    <!--ICON-->
+
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="MyWebSite">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <!--FAMILY FONTS-->
+    
+    <!-- PRECONNECT -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     
+     <!-- PRELOAD FONTS -->
+      <link 
+      rel="preload" 
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Sora:wght@600;700&display=swap" 
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+      
+      <noscript>
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Sora:wght@600;700&display=swap" 
+        rel="stylesheet">
+    </noscript>
+
     <!--STYLESHEETS-->
     <link rel="stylesheet" href="styles/normalize.css">
     
     <link rel="stylesheet" href="styles/join.css">
 
-    <link rel="stylesheet" href="styles/join-large.css">
+    <link rel="preload" href="styles/join-large.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+         <link rel="stylesheet" href="styles/join-large.css">
+    </noscript>
 
 
   <script defer src="scripts/join.js"></script>
