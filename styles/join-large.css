@@ -1,0 +1,172 @@
+
+@media (min-width: 900px) {
+
+    :root {
+        /* =================================
+     PRIMARY BRAND COLORS
+  ================================= */
+
+        --primary: #09093F;
+        /* Deep Midnight Navy */
+        --secondary: #00C6D7;
+        /* Electric Teal */
+        --accent: #FF9E1B;
+        /* Vibrant Orange */
+        --highlight: #E9338A;
+        /* Magenta Fusion */
+        --tertiary: #6D1BB5;
+        /* Royal Purple */
+
+        /* =================================
+     OPTIONAL STATE VARIATIONS
+  ================================= */
+
+        --primary-hover: #1A1A5C;
+        --secondary-hover: #00A8B8;
+        --accent-hover: #E68900;
+        --highlight-hover: #C81F72;
+        --tertiary-hover: #57138F;
+
+        /* =================================
+     BACKGROUNDS & TEXT
+  ================================= */
+
+        --background-dark: #040420;
+        --background-light: #F5F7FA;
+
+        --text-primary: #FFFFFF;
+        --text-secondary: #C8D0DA;
+        --text-dark: #1D2230;
+
+        /* =================================
+     GRADIENTS
+  ================================= */
+
+        --gradient-primary: linear-gradient(135deg,
+                #00C6D7 0%,
+                #6D1BB5 50%,
+                #E9338A 100%);
+
+        --gradient-accent: linear-gradient(135deg,
+                #FF9E1B 0%,
+                #E9338A 100%);
+
+        --gradient-dark: linear-gradient(135deg,
+                #040420 0%,
+                #09093F 100%);
+    }
+
+
+    .hamburguer {
+        display: none;
+    }
+
+    /* NAVIGATION */
+
+    .navigator {
+        display: flex;
+        background: var(--primary);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation {
+        display: block;
+        padding: 0.5rem;
+        background: var(--primary);
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #nav-bar {
+        width: auto;
+        justify-self: right;
+    }
+
+    .navigation a {
+        border: none;
+        transition: background-color 0.3s ease;
+        align-items: center;
+        padding-top: 1rem;
+        gap: 0;
+        width: 150px;
+    }
+
+
+  
+  .layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  
+  form {
+    max-width: 100%;
+    padding: 2.5rem;
+  }
+
+  .form-section {
+    padding: 0;
+  }
+
+  
+  .cards {
+    padding: 0;
+  }
+
+  
+  .card {
+    padding: 1.5rem;
+  }
+
+  
+  header {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  nav {
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+
+  /* FOOTER */
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        padding: 2rem;
+        min-height: 250px;
+    }
+
+    footer>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+    .contact {
+        text-align: left;
+    }
+
+    .social {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+
+    }
+
+    .date {
+        text-align: center;
+    }
+}

@@ -62,9 +62,10 @@ html {
   font-size: 16px;
   box-sizing: border-box;
 }
+
 html {
   font-synthesis: none;
-} 
+}
 
 *,
 *::before,
@@ -116,7 +117,7 @@ header {
   align-items: center;
   padding: .5rem;
   text-align: center;
-  font-family: 'sora', sans-serif   ;
+  font-family: 'sora', sans-serif;
   color: var(--text-primary);
 }
 
@@ -172,13 +173,11 @@ h1::after {
   margin-top: 0.8rem;
   border-radius: 999px;
 
-  background: linear-gradient(
-    90deg,
-    #E68900,
-    #E9338A,
-    #57138F,
-    #1A1A5C
-  );
+  background: linear-gradient(90deg,
+      #E68900,
+      #E9338A,
+      #57138F,
+      #1A1A5C);
 }
 
 span {
