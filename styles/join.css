@@ -46,15 +46,14 @@ html {
 }
 
 body {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+     text-rendering: optimizeLegibility;
 }
 
 body {
   min-height: 100vh;
 
   line-height: 1.5;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif; 
 
   background: var(--background-light);
   color: var(--text-dark);
@@ -163,35 +162,49 @@ span {
 
 .navigation li {
   width: 100%;
+  list-style: none;
+}
+
+
+
+.navigation.show {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary);
+  z-index: 9999;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
 }
 
 .navigation a {
   display: block;
   width: 100%;
   padding: 1rem;
-}
-
-.navigation.show {
-  display: block;
-}
-
-.navigation ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navigation a {
-  display: block;
-  padding: .8rem 10px;
   color: #eee;
   background-color: var(--primary);
   text-decoration: none;
   border-radius: 4px;
   text-align: center;
-
+  transition: background 0.2s ease;
 }
 
+/* FULL WIDTH HOVER EFFECT */
+.navigation a:hover {
+  background-color: var(--secondary-hover);
+  color: #1F3A5F;
+}
 .navigation li.current {
   background-color: var(--accent);
 
@@ -209,9 +222,7 @@ nav {
 
 }
 
-nav {
-  width: 100%;
-}
+
 
 
 
@@ -221,6 +232,8 @@ body {
   background: #f5f5f5;
 }
 
+    
+
 /* layout */
 .layout {
   display: flex;
@@ -229,51 +242,7 @@ body {
   padding: 20px;
 }
 
-/* desktop layout */
-@media (min-width: 900px) {
-  .layout {
-    flex-direction: row;
-  }
-}
-
-/* form */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-label {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-}
-
-input, select, textarea {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-/* cards */
-.cards {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.card {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-/* ✨ animation on load */
+/* animation on load */
 .animate {
   animation: fadeUp 1s ease forwards;
 }
@@ -315,7 +284,14 @@ input, select, textarea {
 
 .form-section {
   background: var(--background-light);
-  padding: 2rem;
+  padding: 2px;
+  border-radius: 1%;
+}
+
+.form-section > h1{
+    background: var(--primary);
+    border-radius: 2%;
+
 }
 
 form {
@@ -327,6 +303,7 @@ form {
   flex-direction: column;
   gap: 1rem;
   max-width: 600px;
+  border-radius: 2%;
 }
 
 /* labels */

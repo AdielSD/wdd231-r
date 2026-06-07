@@ -14,3 +14,10 @@ hamBtn.addEventListener("click", () => {
     nav.classList.toggle("show");
     hamBtn.classList.toggle("show");
 }); 
+
+document.querySelectorAll(".navigation a").forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("show");
+    btn.classList.remove("show");
+  });
+});

@@ -75,12 +75,13 @@
         background: var(--primary);
     }
 
-    .navigation ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
+      .navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+  }
 
     #nav-bar {
         width: auto;
