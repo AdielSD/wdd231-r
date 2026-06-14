@@ -103,7 +103,7 @@ header span {
 
 .navigation li:hover {
     background-color: var(--accent);
-    transition: 0.3s;
+    transition: 0.3s ease;
     color: var(--text);
     
 }
@@ -262,6 +262,10 @@ footer {
     background-color: #386641;
 }
 
+.social a {
+    transition: background-color 0.3s ease;
+}
+
 .social a:hover {
     background-color: #DDA15E;
 }
@@ -281,3 +285,120 @@ footer {
     color: #FFF9EB;
 }
 
+#mydialog {
+    align-self: center;
+    
+    margin: auto;
+}
+
+#mydialog div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    gap: 1.5rem;
+    background-color: #DDA15E;
+    color: #FFF9EB;
+
+}
+#mydialog h2 {
+    background-color: #DDA15E;
+}
+#mydialog button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #FFF9EB;
+
+}
+
+#mydialog button {
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#mydialog p {
+    padding: 2rem;
+    padding-bottom: 6rem;
+}
+
+#mydialog p {
+    line-height: 1.6;
+    margin: 0.75rem 0;
+}
+
+#mydialog strong {
+    color: #333;
+}
+
+
+
+
+/*-------------------ANIMATION AND TRANSITION EXAMPLES--------------------*/
+
+
+/*.filters button {
+    transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+    background-color: #DDA15E ;
+}*/
+
+.filters button {
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+.filters button:hover {
+    transform: scale(1.05);
+}
+
+.course-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.social img {
+    transition: transform 0.3s ease;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+dialog {
+    animation: fadeIn  0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h1 {
+    animation: slideIn 0.8s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

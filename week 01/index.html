@@ -18,7 +18,7 @@
 
 
     <script src="scripts/index.js" defer></script>
-    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/courses.js" type="module" defer></script>
 
 
 </head>
@@ -91,55 +91,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
-
-
                 <img src="images/mee.webp" alt="mugshot" width="250px" height="420">
 
             </div>
@@ -152,20 +103,31 @@
 
             <div class="filters">
 
-                <button id="all">All 0Courses</button>
+                <button id="all">All Courses</button>
                 <button id="wdd">WDD Courses</button>
                 <button id="cse">CSE Courses</button>
             </div>
 
             <div id="courses"></div>
 
+            <dialog id="mydialog">
+                <div>
+                    <h2>title</h2>
+                    <button>X</button>
+                </div>
+                <p></p>
+            </dialog>
+
+
             <div class="credits">
                 <p>Total Credits: <span id="credits"></span></p>
             </div>
 
-            
+
 
         </div>
+
+        <dialog class="course-details"></dialog>
 
     </main>
 

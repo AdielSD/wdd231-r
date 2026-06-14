@@ -7,6 +7,9 @@ navbttn.addEventListener('click', () => {
     navBar.classList.toggle('show');
 });
 
+
+
+
 /* DATE CODE */
 
 const year = document.querySelector("#year");
