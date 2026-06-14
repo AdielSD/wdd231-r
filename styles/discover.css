@@ -259,6 +259,10 @@ main {
   background: var(--gradient-primary);
 }
 
+main h1 {
+  background-color:#09093F;
+}
+
 
 #visitor-message {
   min-height: 70px;
@@ -514,7 +518,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   padding: 5px 0 5px 10px;
-  background-color: #1F3A5F;
+  background-color: var(--primary);
   color: white;
   padding: 1rem;
 
@@ -550,6 +554,7 @@ h3 {
   width: 44px;
   height: 44px;
   border: #335c67 dotted 1px;
+  background-color: #1F3A5F;
   border-radius: 22px;
 }
 
