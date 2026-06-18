@@ -1,3 +1,4 @@
+
 @media (min-width: 900px) {
 
 
@@ -9,7 +10,7 @@
 
     .navigator {
         display: flex;
-        background: var(--bg-main);
+        background: var(--primary);
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -18,7 +19,7 @@
     .navigation {
         display: block;
         padding: 0.5rem;
-        background: var(--bg-main);
+        background: var(--primary);
 
     }
 
@@ -27,7 +28,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    gap: .5px;
+    gap: 1.5rem;
   }
 
     #nav-bar {
@@ -44,24 +45,24 @@
         width: 150px;
     }
 
-    
-
-    .navi {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    
-
 
   
+  .layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  
+  
+
   
   header {
-    justify-content:flex-start;
-    padding:1rem 2rem;
-    gap: 10px;
+    justify-content: space-between;
+    padding: 1rem 2rem;
   }
 
   nav {
@@ -102,3 +103,4 @@
         text-align: center;
     }
 }
+

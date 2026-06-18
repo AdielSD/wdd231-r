@@ -1,119 +1,140 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title> Home | Skill Learning Hub</title>
+    <meta name="author" content="Sephora Diaz">
+    <meta name="description" content="This is the home page of the Skill Learning Hub">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Discover | Limatambo Central Business Hub</title>
-        <meta name="author" content="Sephora Diaz">
-        <meta name="description" content="This is the discover site of the Lima Central Business Hub">
+    <meta property="og:title" content="Home - Skill Learning Hub">
+    <meta property="og:description"
+        content="Discover valuable skills, explore free learning resources, and build a personalized learning journey to achieve your career goals.">
+    <meta property="og:image" content="https://adielsd.github.io/wdd231/images/limatambo-logo.png">
+    <meta property="og:url" content="https://adielsd.github.io/wdd231/">
+    <meta property="og:type" content="website">
 
-        <meta property="og:title" content="Directory - Limatambo Central Business Hub">
-        <meta property="og:description"
-            content="Supporting local businesses in Limatambo by providing resources, networking opportunities, and community events to help growth and success.">
-        <meta property="og:image" content="https://adielsd.github.io/wdd231/images/limatambo-logo.png">
-        <meta property="og:url" content="https://adielsd.github.io/wdd231/">
-        <meta property="og:type" content="website">
+    <!--FONTS-->
 
-        <!--STYLESHEETS-->
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/discover.css">
-
-        <link rel="preload" href="styles/discover-large.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript>
-            <link rel="stylesheet" href="styles/discover-large.css">
-        </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 
 
-        <!--ICON-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
 
 
 
-        <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-        <link rel="shortcut icon" href="images/transparent-icon.ico">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-        <meta name="apple-mobile-web-app-title" content="MyWebSite">
-        <link rel="manifest" href="images/site.webmanifest">
-
-        <!--Preload Images-->
-        <link rel="preload" fetchpriority="high" as="image" href="/path/to/your/actual-lcp-image.webp">
-
-        <!--FAMILY FONTS-->
-
-        <!-- PRECONNECT -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <!-- PRELOAD FONTS -->
-        <link rel="preload"
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Sora:wght@600;700&display=swap"
-            as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-        <noscript>
-            <link
-                href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Sora:wght@600;700&display=swap"
-                rel="stylesheet">
-        </noscript>
 
 
-        <script src="scripts/discover.js" type="module"></script>
-        <script src="scripts/date.js" defer></script>
-        
+     <!--STYLESHEETS-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
 
-    </head>
+    <link rel="preload" href="styles/home-large.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles/home-large.css">
+    </noscript>
 
-    <body>
-        <div class="navigator">
+    <script src="scripts/home.js" type="module"></script>
+    <script src="scripts/date.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="navi">
             <header>
-                <img src="images/transparent-icon.svg" alt="site_logo" width="60" height="60">
-
-                <span> Limatambo Central Business Hub </span>
-
+                <img src="images/skillQuestIcon.png" alt="site_logo" height="60" width="100">
+                
+                <span class="logo">SkillQuest</span>
                 <button id="ham-btn" class="hamburguer" aria-label="Open navigation menu"></button>
 
+                <nav id="nav-bar" class="navigation">   
+        
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Quests</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                
+                </nav>
             </header>
 
-            <nav id="nav-bar" class="navigation">
-                <ul>
-
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="index.html">Discover</a></li>
-
-                </ul>
-            </nav>
-        </div>
-
-
-        <main>
             
+            <div class="user-actions">
+                <div class="userProfile">
+                    <img src="images/penguin2.gif" alt="user" width="70" height="70">
+                </div>
+                <button class="pixel-btn">Join Adventure</button> 
+            </div>
             
-            <h1>Discover Lima</h1>
-            
-            <div id="visitor-message"></div>
-            
-            <div id="discover-grid"></div>
-
-    
-
         
+        </div>
+        
+        <main>
+            <div class="hero">
+                <img src="images/hero2.webp" alt="heroimg" width="1200" height="500">
+                <div class="hero-text">
+                    <h1>Ready to level up your skills? </h1> 
+                    <button class="hero-start">Start</button>
+                </div>
+            </div>
+
+            <div class="greet">
+                <img src="images/Ghost.png" alt="welcomeEmoji" width="100" height="100">
+            <div id="visitor-message" class="visitorMsg"></div>    
+
+            </div>
 
 
-        </main>
 
+            <span class="title">Explore more</span>
+            <div class="P-Quests" id="resourceCards"></div>
+            
+           <section class="quest-panel">
+
+    <div class="quest-mascot">
+        <img src="images/doggie.gif" alt="Quest Ghost">
+    </div>
+
+    <div class="quest-content">
+        <h2>Start Your Adventure</h2>
+
+        <p>
+            Ready to unlock new skills and earn XP?
+            Choose your next quest and begin your journey.
+        </p>
+
+        <div class="quest-actions">
+            <input
+                type="text"
+                placeholder="What skill do you want to learn?"
+            >
+
+            <button class="pixel-btn">
+                Begin Quest
+            </button>
+        </div>
+    </div>
+
+</section>
+        
         <footer>
-
             <div class="Contact">
                 <h2>Contact Us</h2>
-                <p><strong>Phone:</strong> +51 987 654 321</p>
-                <p><strong>Email:</strong> info@limatambochamber.pe</p>
+                <p><strong>Phone:</strong> +51 967 984 473</p>
+                <p><strong>Email:</strong> ask@skillQuest.pe</p>
 
                 <address>
-                    Limatambo Chamber of Commerce<br>
-                    Av. República de Panamá 4567<br>
-                    Surquillo, Lima 15047<br>
+                    SkillQuest Center<br>
+                    Av. Javier Prado Este 1709<br>
+                    San Isidro, Lima 15047<br>
                     Peru
                 </address>
             </div>
@@ -136,15 +157,16 @@
             <div class="date">
                 <p>WDD 231</p>
                 <p>
-                    © <span id="year"></span> Sephora Diaz | Lima, Peru</p>
+                    © <span id="year"></span> Sephora Diaz | Lima, Peru | Final Project</p>
                 <p id="lastModified"></p>
 
             </div>
 
 
+    </footer> 
 
-        </footer>
 
-    </body>
-
-    </html>
+    </div>
+       
+</body>
+</html>

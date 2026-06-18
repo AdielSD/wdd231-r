@@ -1,0 +1,151 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discover | Limatambo Central Business Hub</title>
+        <meta name="author" content="Sephora Diaz">
+        <meta name="description" content="This is the discover site of the Lima Central Business Hub">
+
+        <meta property="og:title" content="Directory - Limatambo Central Business Hub">
+        <meta property="og:description"
+            content="Supporting local businesses in Limatambo by providing resources, networking opportunities, and community events to help growth and success.">
+        <meta property="og:image" content="https://adielsd.github.io/wdd231/images/limatambo-logo.png">
+        <meta property="og:url" content="https://adielsd.github.io/wdd231/">
+        <meta property="og:type" content="website">
+
+        <!--STYLESHEETS-->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/discover.css">
+
+        <link rel="preload" href="styles/discover-large.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="styles/discover-large.css">
+        </noscript>
+
+
+        <!--ICON-->
+
+
+
+        <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+        <link rel="shortcut icon" href="images/transparent-icon.webp">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <meta name="apple-mobile-web-app-title" content="MyWebSite">
+        <link rel="manifest" href="images/site.webmanifest">
+
+        <!--Preload Images-->
+        <link rel="preload" fetchpriority="high" as="image" href="/images/larcomar.webp">
+        <link rel="preload" fetchpriority="high" as="image" href="/images/kennedy.webp">
+
+        <!--FAMILY FONTS-->
+
+        <!-- PRECONNECT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- PRELOAD FONTS -->
+        <link rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Sora:wght@600;700&display=swap"
+            as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+        <noscript>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Sora:wght@600;700&display=swap"
+                rel="stylesheet">
+        </noscript>
+
+
+        <script src="scripts/discover.js" type="module"></script>
+        <script src="scripts/date.js" defer></script>
+        
+
+    </head>
+
+    <body>
+        <div class="navigator">
+            <header>
+                <img src="images/transparent-icon.svg" alt="site_logo" width="60" height="60">
+
+                <span> Limatambo Central Business Hub </span>
+
+                <button id="ham-btn" class="hamburguer" aria-label="Open navigation menu"></button>
+
+            </header>
+
+            <nav id="nav-bar" class="navigation">
+                <ul>
+
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="index.html">Discover</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+
+        <main>
+            
+            
+            <h1>Discover Lima</h1>
+            
+            <div id="visitor-message"></div>
+            
+            <div id="discover-grid"></div>
+
+    
+
+        
+
+
+        </main>
+
+        <footer>
+
+            <div class="Contact">
+                <h2>Contact Us</h2>
+                <p><strong>Phone:</strong> +51 987 654 321</p>
+                <p><strong>Email:</strong> info@limatambochamber.pe</p>
+
+                <address>
+                    Limatambo Chamber of Commerce<br>
+                    Av. República de Panamá 4567<br>
+                    Surquillo, Lima 15047<br>
+                    Peru
+                </address>
+            </div>
+
+
+
+
+
+            <div class="social">
+                <a href="https://www.instagram.com/limachamber/?hl=es-la" target="_blank"><img src="images/instagram.svg"
+                        alt="instagram" width="16" height="16"></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg" alt="linkedin"
+                        width="16" height="16"></a>
+                <a href="https://teams.live.com/free" target="_blank"><img src="images/microsoft-teams.svg"
+                        alt="microsoft-teams" width="16" height="16"></a>
+                <a href="https://x.com/?lang=es" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x" width="16"
+                        height="16"></a>
+            </div>
+
+            <div class="date">
+                <p>WDD 231</p>
+                <p>
+                    © <span id="year"></span> Sephora Diaz | Lima, Peru</p>
+                <p id="lastModified"></p>
+
+            </div>
+
+
+
+        </footer>
+
+    </body>
+
+    </html>

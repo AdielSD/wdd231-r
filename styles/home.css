@@ -1,60 +1,98 @@
 :root {
-  /* =================================
-     PRIMARY BRAND COLORS
-  ================================= */
 
-  --primary: #09093F;
-  /* Deep Midnight Navy */
-  --secondary: #00C6D7;
-  /* Electric Teal */
-  --accent: #FF9E1B;
-  /* Vibrant Orange */
-  --highlight: #E9338A;
-  /* Magenta Fusion */
-  --tertiary: #6D1BB5;
-  /* Royal Purple */
+  /* =========================
+   BRAND COLORS
+========================= */
 
-  /* =================================
-     OPTIONAL STATE VARIATIONS
-  ================================= */
+  --primary: #4826E3;
+  /* Quest Blue */
+  --secondary: #64DCDC;
+  /* Neon Cyan */
+  --accent: #CD4FF7;
+  /* XP Purple */
+  --dark: #17014B;
+  /* Deep Space */
+  --light: #F7FAFC;
+  /* Soft White */
 
-  --primary-hover: #1A1A5C;
-  --secondary-hover: #00A8B8;
-  --accent-hover: #E68900;
-  --highlight-hover: #C81F72;
-  --tertiary-hover: #57138F;
+  /* =========================
+   HOVER STATES
+========================= */
 
-  /* =================================
-     BACKGROUNDS & TEXT
-  ================================= */
+  --primary-hover: #5b3df0;
+  --secondary-hover: #7ce8e8;
+  --accent-hover: #d86cff;
 
-  --background-dark: #040420;
-  --background-light: #F5F7FA;
+  /* =========================
+   BACKGROUNDS
+========================= */
 
-  --text-primary: #FFFFFF;
-  --text-secondary: #C8D0DA;
-  --text-dark: #1D2230;
+  --bg-main: #17014B;
+  --bg-card: #24105f;
+  --bg-card-hover: #2e1775;
+  --bg-light: #F7FAFC;
 
-  /* =================================
-     GRADIENTS
-  ================================= */
+  /* =========================
+   TEXT
+========================= */
 
-  --gradient-primary: linear-gradient(135deg,
-      #00C6D7 0%,
-      #6D1BB5 50%,
-      #E9338A 100%);
+  --text-primary: #F7FAFC;
+  --text-secondary: #C8CBE0;
+  --text-dark: #17014B;
 
-  --gradient-accent: linear-gradient(135deg,
-      #FF9E1B 0%,
-      #E9338A 100%);
+  /* =========================
+   BORDERS
+========================= */
 
-  --gradient-dark: linear-gradient(135deg,
-      #040420 0%,
-      #09093F 100%);
+  --border: rgba(100, 220, 220, 0.25);
+  --border-strong: #64DCDC;
+
+  /* =========================
+   SHADOWS
+========================= */
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, .15);
+
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, .25);
+
+  --glow-cyan:
+    0 0 10px rgba(100, 220, 220, .6),
+    0 0 20px rgba(100, 220, 220, .4);
+
+  --glow-purple:
+    0 0 10px rgba(205, 79, 247, .6),
+    0 0 20px rgba(205, 79, 247, .4);
+
+  /* =========================
+   GRADIENTS
+========================= */
+
+  --gradient-primary:
+    linear-gradient(135deg,
+      #4826E3 0%,
+      #CD4FF7 100%);
+
+  --gradient-hero:
+    linear-gradient(135deg,
+      #17014B 0%,
+      #4826E3 50%,
+      #CD4FF7 100%);
+
+  --gradient-button:
+    linear-gradient(135deg,
+      #64DCDC,
+      #CD4FF7);
+
 }
 
-/*---------------BODY CONFIG-------------------*/
 
+
+
+h1,
+h2,
+.logo {
+  font-family: "Pixelify Sans", sans-serif;
+}
 
 
 html {
@@ -82,18 +120,10 @@ body {
 
 body {
   min-height: 100vh;
-
+  font-family: 'Inter', sans-serif;
   line-height: 1.5;
   font-family: 'Inter', sans-serif;
-
-  background: var(--background-light);
-  color: var(--text-dark);
-
   overflow-x: hidden;
-}
-
-body {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
 
@@ -102,27 +132,40 @@ main {
   overflow-x: hidden;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
+/*--------------------HEADER--------------------*/
 
-/*-----------------HEADER------------------*/
+header,
+.navigation {
+  background: var(--bg-main);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--text-primary);
+  padding: .5rem;
+}
 
 header {
-  background-color: var(--primary);
-  display: flex;
-  gap: 5.5rem;
-  align-items: center;
-  padding: .5rem;
-  text-align: center;
-  font-family: 'sora', sans-serif;
-  color: var(--text-primary);
+  justify-content: space-between;
+  width: 100%;
+  gap: 0;
+  
 }
 
-/*-----------------BUTTONS------------------*/
-/* Hamburguer button*/
+header span {
+  font-size: 2rem;
+  font-family: "Pixelify Sans", sans-serif;;
+  font-weight: 800;
+}
+
+
+/*--------------------HAMBURGUER--------------------*/
+
 .hamburguer {
   background: none;
   border: none;
@@ -152,42 +195,17 @@ header {
   font-size: 1.5rem;
 }
 
-/*-----------------NAVIGATION------------------*/
 
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  font-style: oblique;
-  color: var(--text-primary);
-  padding: 1rem;
+
+/*--------------------NAVIGATOR--------------------*/
+.navigation {
+  display: flex;
+
 }
-
-h1::after {
-  content: "";
-  display: block;
-  justify-self: center;
-
-  width: min(500px, 80%);
-  height: 6px;
-
-  margin-top: 0.8rem;
-  border-radius: 999px;
-
-  background: linear-gradient(90deg,
-      #E68900,
-      #E9338A,
-      #57138F,
-      #1A1A5C);
-}
-
-span {
-  display: block;
-}
-
 
 .navigation {
   display: none;
-  background-color: var(--primary);
+  background: var(--bg-main);
   flex-direction: column;
   width: 100%;
 
@@ -201,6 +219,7 @@ span {
 
 
 .navigation.show {
+
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -208,7 +227,7 @@ span {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: var(--primary);
+  background-color: var(--bg-card-hover);
   z-index: 9999;
 }
 
@@ -226,99 +245,311 @@ span {
   width: 100%;
   padding: 1rem;
   color: #eee;
-  background-color: var(--primary);
+  background-color: var(--bg-main);
   text-decoration: none;
   border-radius: 4px;
   text-align: center;
   transition: background 0.2s ease;
 }
 
-/* FULL WIDTH HOVER EFFECT */
 .navigation a:hover {
-  background-color: var(--secondary-hover);
-  color: #1F3A5F;
-}
-.navigation li.current {
-  background-color: var(--accent);
-
-}
-
-.navigation a:hover {
-  background-color: var(--secondary-hover);
-  color: #1F3A5F;
+  background: var(--secondary-hover);
+  color: var(--text-dark);
+  transform: 0.3s;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: var(--bg-main);
 
 }
 
-main {
-  background: var(--gradient-primary);
+.navi {
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom: 2px solid var(--border);
 }
 
-/*------------ANIMATIONS-----------*/
+@media (max-width: 900px) {
 
-@keyframes fadeIn {
-
-    from {
-        opacity: 0;
+    .pixel-btn {
+        font-size: 1rem;
+        padding: 8px 16px;
     }
 
-    to {
-        opacity: 1;
+    .userProfile {
+        display: none;
     }
+    .pixel-btn {
+      display: none;
+    }
+
 }
-@keyframes slideUp {
-
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/*--------------------MAIN--------------------*/
+body {
+  background: var(--bg-main);
+  color: var(--text-primary);
 }
 
-@keyframes float {
-
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-6px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-h1::after {
-
-    animation: rainbow 4s linear infinite;
+.hero {
+  position: relative;
 }
 
-@keyframes rainbow {
-
-    0% {
-        filter: hue-rotate(0deg);
-    }
-
-    100% {
-        filter: hue-rotate(360deg);
-    }
+.hero img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
 }
 
-/*-----------------FOOTER------------------*/
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+
+  color: white;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 5px #ff00ff,
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff;
+}
+
+.hero-text button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-start {
+  padding: 1rem 2rem;
+  position: relative;
+  cursor: pointer;
+  background: var(--gradient-button);
+
+  box-shadow:
+    -4px 0 0 #fff,
+    4px 0 0 #fff,
+    0 -4px 0 #fff,
+    0 4px 0 #fff;
+}
+
+.hero-start {
+  display: flex;
+  justify-self: center;
+  padding: 10px 16px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: large;
+  font-weight: 600;
+}
+
+.hero-start:hover {
+  background: var(--secondary-hover);
+  transition: 0.3s;
+  color: var(--text-dark) ;
+}
+
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.userProfile {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #000;
+    background: #ff00ff;
+    box-shadow: 0 4px 0 #7300a8;
+}
+
+
+.pixel-btn {
+    background: #f8c417;
+    border: 3px solid #000;
+    position:relative;
+    padding: 10px 24px;
+
+    clip-path: polygon(
+        0 6px,
+        6px 0,
+        calc(100% - 6px) 0,
+        100% 6px,
+        100% calc(100% - 6px),
+        calc(100% - 6px) 100%,
+        6px 100%,
+        0 calc(100% - 6px)
+    );
+
+    box-shadow: 0 4px 0 #a87300;
+    font-family: "Pixelify Sans", sans-serif; 
+    font-size: 1.2rem;
+
+}
+
+.pixel-btn:hover {
+  background: var(--secondary-hover);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.pixel-btn::after {
+    content: "";
+    position: absolute;
+
+    left: -3px;
+    right: -3px;
+    bottom: -7px;
+
+    height: 6px;
+
+    background: #b07d00;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.greet {
+  display: flex;
+  gap: 1rem;
+  padding: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.visitorMsg {
+    background: #24105f;
+    color: white;
+    padding: .5rem;
+    border-radius: 20px;
+
+    border: 3px solid #64DCDC;
+
+    box-shadow:
+        0 0 10px rgba(100,220,220,.5),
+        0 0 20px rgba(100,220,220,.3);
+}
+.visitorMsg::before {
+    border-right-color: #24105f;
+}
+
+/*--------------------CARDS--------------------*/
+.P-Quests {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+.resource-card {
+    padding: 1.5rem;
+    border: 3px solid black;
+    border: 2px solid var(--accent);
+
+    box-shadow: 0 4px 0 var(--border-strong);
+}
+.resource-card span {
+    font-size: 3rem;
+}
+
+.resource-card h3 {
+  color: var(--text-primary);
+}
+
+.title{
+  font-size: 2rem;
+  font-family: "Pixelify Sans", sans-serif;
+  padding: 1rem;
+}
+
+.resource-card a {
+  display: flex;
+  background: var(--gradient-button);
+  padding:4px 16px;
+  justify-self: center;
+  color: var(--text-dark);
+  font-family:"Pixelify Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-radius: 5px;
+   
+}
+.resource-card p {
+  padding: .5rem ;
+  
+}
+.quest-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+
+    padding: 3rem;
+
+    margin: 4rem 0;
+
+    background: #090e2b;
+
+    border: 3px solid var(--secondary);
+
+    border-radius: 12px;
+}
+
+.quest-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.quest-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.quest-content p {
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.quest-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.quest-actions input {
+    padding: 1rem;
+
+    width: 320px;
+
+    background: #111935;
+
+    color: white;
+
+    border: 2px solid var(--secondary);
+
+    border-radius: 6px;
+
+    font-family: inherit;
+}
+.card-gif {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+/*--------------------FOOTER--------------------*/
 footer {
-  background-color: var(--primary);
+  background: var(--bg-main);
   min-height: 250px;
 }
+
 
 .footer-grid {
   min-height: 250px;
@@ -340,10 +571,10 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   padding: 5px 0 5px 10px;
-  background-color: var(--primary);
+  background-color: var(--bg-main);
   color: white;
   padding: 1rem;
-
+  border-top: 2px solid var(--border);
 
 }
 
@@ -376,7 +607,7 @@ h3 {
   width: 44px;
   height: 44px;
   border: #335c67 dotted 1px;
-  background-color: #1F3A5F;
+  background: var(--primary);
   border-radius: 22px;
 }
 
@@ -386,10 +617,92 @@ h3 {
 }
 
 .social a:hover {
-  background-color: var(--secondary-hover);
+  background: var(--secondary-hover);
 }
 
 .date {
   align-items: center;
   text-align: center;
 }
+
+/*--------------------ANIMATIONS--------------------*/
+.greet img {
+    animation: ghostFloat 3s ease-in-out infinite;
+}
+
+@keyframes ghostFloat {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hero-start {
+    transition: all 0.2s ease;
+}
+
+.hero-start:hover {
+    transform: translateY(-3px);
+}
+
+.hero-start:active {
+    transform: translateY(4px);
+
+    box-shadow:
+        -2px 0 0 #fff,
+         2px 0 0 #fff,
+         0 -2px 0 #fff,
+         0  2px 0 #fff;
+}
+
+.pixel-btn {
+    transition: all 0.2s ease;
+}
+
+.pixel-btn:hover {
+    transform: translateY(-3px);
+}
+
+.pixel-btn:active {
+    transform: translateY(4px);
+
+    box-shadow:
+        -2px 0 0 #fff,
+         2px 0 0 #fff,
+         0 -2px 0 #fff,
+         0  2px 0 #fff;
+}
+
+.resource-card a {
+    transition: all 0.2s ease;
+}
+
+.resource-card a:hover {
+    transform: translateY(-3px);
+}
+
+.resource-card a:active {
+    transform: translateY(4px);
+
+    box-shadow:
+        -2px 0 0 #fff,
+         2px 0 0 #fff,
+         0 -2px 0 #fff,
+         0  2px 0 #fff;
+}
+
+.quest-mascot img {
+    width: 140px;
+
+    animation:
+        ghostIdle 4s ease-in-out infinite,
+        ghostGlow 2.5s ease-in-out infinite;
+}
+/*--------------------!!--------------------*/
