@@ -1,4 +1,4 @@
-import { learningResources } from "../finalproject/data/resources.mjs";
+import { learningResources } from "../data/resources.mjs";
 
 const resourceContainer = document.querySelector('#resourceCards');
 const visitorMessage = document.querySelector("#visitor-message");

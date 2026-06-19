@@ -154,12 +154,13 @@ header {
   justify-content: space-between;
   width: 100%;
   gap: 0;
-  
+
 }
 
 header span {
   font-size: 2rem;
-  font-family: "Pixelify Sans", sans-serif;;
+  font-family: "Pixelify Sans", sans-serif;
+  ;
   font-weight: 800;
 }
 
@@ -267,26 +268,28 @@ nav {
 }
 
 .navi {
-    flex-direction: column;
-    gap: 1rem;
-    border-bottom: 2px solid var(--border);
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 2px solid var(--border);
 }
 
 @media (max-width: 900px) {
 
-    .pixel-btn {
-        font-size: 1rem;
-        padding: 8px 16px;
-    }
+  .pixel-btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
 
-    .userProfile {
-        display: none;
-    }
-    .pixel-btn {
-      display: none;
-    }
+  .userProfile {
+    display: none;
+  }
+
+  .pixel-btn {
+    display: none;
+  }
 
 }
+
 /*--------------------MAIN--------------------*/
 body {
   background: var(--bg-main);
@@ -354,45 +357,43 @@ body {
 .hero-start:hover {
   background: var(--secondary-hover);
   transition: 0.3s;
-  color: var(--text-dark) ;
+  color: var(--text-dark);
 }
 
 
 .user-actions {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .userProfile {
-    width: 48px;
-    height: 48px;
-    border: 3px solid #000;
-    background: #ff00ff;
-    box-shadow: 0 4px 0 #7300a8;
+  width: 48px;
+  height: 48px;
+  border: 3px solid #000;
+  background: #ff00ff;
+  box-shadow: 0 4px 0 #7300a8;
 }
 
 
 .pixel-btn {
-    background: #f8c417;
-    border: 3px solid #000;
-    position:relative;
-    padding: 10px 24px;
+  background: #f8c417;
+  border: 3px solid #000;
+  position: relative;
+  padding: 10px 24px;
 
-    clip-path: polygon(
-        0 6px,
-        6px 0,
-        calc(100% - 6px) 0,
-        100% 6px,
-        100% calc(100% - 6px),
-        calc(100% - 6px) 100%,
-        6px 100%,
-        0 calc(100% - 6px)
-    );
+  clip-path: polygon(0 6px,
+      6px 0,
+      calc(100% - 6px) 0,
+      100% 6px,
+      100% calc(100% - 6px),
+      calc(100% - 6px) 100%,
+      6px 100%,
+      0 calc(100% - 6px));
 
-    box-shadow: 0 4px 0 #a87300;
-    font-family: "Pixelify Sans", sans-serif; 
-    font-size: 1.2rem;
+  box-shadow: 0 4px 0 #a87300;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1.2rem;
 
 }
 
@@ -403,19 +404,19 @@ body {
 }
 
 .pixel-btn::after {
-    content: "";
-    position: absolute;
+  content: "";
+  position: absolute;
 
-    left: -3px;
-    right: -3px;
-    bottom: -7px;
+  left: -3px;
+  right: -3px;
+  bottom: -7px;
 
-    height: 6px;
+  height: 6px;
 
-    background: #b07d00;
-    border-left: 3px solid #000;
-    border-right: 3px solid #000;
-    border-bottom: 3px solid #000;
+  background: #b07d00;
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+  border-bottom: 3px solid #000;
 }
 
 .greet {
@@ -427,43 +428,46 @@ body {
 }
 
 .visitorMsg {
-    background: #24105f;
-    color: white;
-    padding: .5rem;
-    border-radius: 20px;
+  background: #24105f;
+  color: white;
+  padding: .5rem;
+  border-radius: 20px;
 
-    border: 3px solid #64DCDC;
+  border: 3px solid #64DCDC;
 
-    box-shadow:
-        0 0 10px rgba(100,220,220,.5),
-        0 0 20px rgba(100,220,220,.3);
+  box-shadow:
+    0 0 10px rgba(100, 220, 220, .5),
+    0 0 20px rgba(100, 220, 220, .3);
 }
+
 .visitorMsg::before {
-    border-right-color: #24105f;
+  border-right-color: #24105f;
 }
 
 /*--------------------CARDS--------------------*/
 .P-Quests {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
-.resource-card {
-    padding: 1.5rem;
-    border: 3px solid black;
-    border: 2px solid var(--accent);
 
-    box-shadow: 0 4px 0 var(--border-strong);
+.resource-card {
+  padding: 1.5rem;
+  border: 3px solid black;
+  border: 2px solid var(--accent);
+
+  box-shadow: 0 4px 0 var(--border-strong);
 }
+
 .resource-card span {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .resource-card h3 {
   color: var(--text-primary);
 }
 
-.title{
+.title {
   font-size: 2rem;
   font-family: "Pixelify Sans", sans-serif;
   padding: 1rem;
@@ -472,78 +476,83 @@ body {
 .resource-card a {
   display: flex;
   background: var(--gradient-button);
-  padding:4px 16px;
+  padding: 4px 16px;
   justify-self: center;
   color: var(--text-dark);
-  font-family:"Pixelify Sans", sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
   list-style: none;
   text-decoration: none;
   border-radius: 5px;
-   
+
 }
+
 .resource-card p {
-  padding: .5rem ;
-  
+  padding: .5rem;
+
 }
+
 .quest-panel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    gap: 2rem;
+  gap: 2rem;
 
-    padding: 3rem;
+  padding: 3rem;
 
-    margin: 4rem 0;
+  margin: 4rem 0;
 
-    background: #090e2b;
+  background: #090e2b;
 
-    border: 3px solid var(--secondary);
+  border: 3px solid var(--secondary);
 
-    border-radius: 12px;
+  border-radius: 12px;
 }
 
 .quest-content {
-    text-align: center;
-    max-width: 600px;
+  text-align: center;
+  max-width: 600px;
 }
 
 .quest-content h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .quest-content p {
-    margin-bottom: 1.5rem;
-    color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
 }
 
 .quest-actions {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 .quest-actions input {
-    padding: 1rem;
+  padding: 1rem;
 
-    width: 320px;
+  width: 320px;
 
-    background: #111935;
+  background: #111935;
 
-    color: white;
+  color: white;
 
-    border: 2px solid var(--secondary);
+  border: 2px solid var(--secondary);
 
-    border-radius: 6px;
+  border-radius: 6px;
 
-    font-family: inherit;
+  font-family: inherit;
 }
+
 .card-gif {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
 }
+
 /*--------------------FOOTER--------------------*/
 footer {
   background: var(--bg-main);
@@ -627,82 +636,83 @@ h3 {
 
 /*--------------------ANIMATIONS--------------------*/
 .greet img {
-    animation: ghostFloat 3s ease-in-out infinite;
+  animation: ghostFloat 3s ease-in-out infinite;
 }
 
 @keyframes ghostFloat {
-    0% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    50% {
-        transform: translateY(-12px);
-    }
+  50% {
+    transform: translateY(-12px);
+  }
 
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .hero-start {
-    transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .hero-start:hover {
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 .hero-start:active {
-    transform: translateY(4px);
+  transform: translateY(4px);
 
-    box-shadow:
-        -2px 0 0 #fff,
-         2px 0 0 #fff,
-         0 -2px 0 #fff,
-         0  2px 0 #fff;
+  box-shadow:
+    -2px 0 0 #fff,
+    2px 0 0 #fff,
+    0 -2px 0 #fff,
+    0 2px 0 #fff;
 }
 
 .pixel-btn {
-    transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .pixel-btn:hover {
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 .pixel-btn:active {
-    transform: translateY(4px);
+  transform: translateY(4px);
 
-    box-shadow:
-        -2px 0 0 #fff,
-         2px 0 0 #fff,
-         0 -2px 0 #fff,
-         0  2px 0 #fff;
+  box-shadow:
+    -2px 0 0 #fff,
+    2px 0 0 #fff,
+    0 -2px 0 #fff,
+    0 2px 0 #fff;
 }
 
 .resource-card a {
-    transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .resource-card a:hover {
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 .resource-card a:active {
-    transform: translateY(4px);
+  transform: translateY(4px);
 
-    box-shadow:
-        -2px 0 0 #fff,
-         2px 0 0 #fff,
-         0 -2px 0 #fff,
-         0  2px 0 #fff;
+  box-shadow:
+    -2px 0 0 #fff,
+    2px 0 0 #fff,
+    0 -2px 0 #fff,
+    0 2px 0 #fff;
 }
 
 .quest-mascot img {
-    width: 140px;
+  width: 140px;
 
-    animation:
-        ghostIdle 4s ease-in-out infinite,
-        ghostGlow 2.5s ease-in-out infinite;
+  animation:
+    ghostIdle 4s ease-in-out infinite,
+    ghostGlow 2.5s ease-in-out infinite;
 }
+
 /*--------------------!!--------------------*/
