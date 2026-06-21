@@ -134,7 +134,7 @@ main {
 
 .container {
   width: 90%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -228,7 +228,7 @@ header span {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: var(--bg-card-hover);
+  background-color: var(--bg-main);
   z-index: 9999;
 }
 
@@ -278,6 +278,7 @@ nav {
   .pixel-btn {
     font-size: 1rem;
     padding: 8px 16px;
+   
   }
 
   .userProfile {
@@ -288,7 +289,27 @@ nav {
     display: none;
   }
 
+  .hero-text {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+
 }
+
+.greet {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+}
+
+
 
 /*--------------------MAIN--------------------*/
 body {
@@ -367,12 +388,10 @@ body {
   gap: 1rem;
 }
 
-.userProfile {
-  width: 48px;
-  height: 48px;
-  border: 3px solid #000;
-  background: #ff00ff;
-  box-shadow: 0 4px 0 #7300a8;
+.userProfile img {
+  width: 60px;
+  height: 60px;
+  align-items: center;
 }
 
 
@@ -380,7 +399,7 @@ body {
   background: #f8c417;
   border: 3px solid #000;
   position: relative;
-  padding: 10px 24px;
+  padding: 7px 14px;
 
   clip-path: polygon(0 6px,
       6px 0,
@@ -393,7 +412,7 @@ body {
 
   box-shadow: 0 4px 0 #a87300;
   font-family: "Pixelify Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
 
 }
 
@@ -443,7 +462,10 @@ body {
 .visitorMsg::before {
   border-right-color: #24105f;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 /*--------------------CARDS--------------------*/
 .P-Quests {
   display: grid;
@@ -493,19 +515,17 @@ body {
 
 .quest-panel {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
   gap: 2rem;
-
   padding: 3rem;
-
   margin: 4rem 0;
 
   background: #090e2b;
 
   border: 3px solid var(--secondary);
-
   border-radius: 12px;
 }
 
@@ -526,25 +546,46 @@ body {
 
 .quest-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .quest-actions input {
+  width: 100%;
+  max-width: 320px;
+
   padding: 1rem;
 
-  width: 320px;
-
   background: #111935;
-
   color: white;
 
   border: 2px solid var(--secondary);
-
   border-radius: 6px;
 
   font-family: inherit;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .quest-panel {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .quest-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .quest-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quest-actions input {
+    max-width: 100%;
+  }
 }
 
 .card-gif {
@@ -559,6 +600,9 @@ footer {
   min-height: 250px;
 }
 
+footer h3 {
+  padding: 1rem;
+}
 
 .footer-grid {
   min-height: 250px;
